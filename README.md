@@ -1,0 +1,37 @@
+Great Testnet Faucet: https://tbtc.bitaps.com/
+Bitcoin CLI RPC Commands: https://bitcoincore.org/en/doc/0.18.0/rpc/
+Guide to how to create transactions: https://stackoverflow.com/questions/38493893/heres-how-to-send-raw-transaction-btc-using-bitcoin-cli-command/46637033#46637033
+Use this for a bitcoin API: https://testnet-api.smartbit.com.au/v1/blockchain/address/2Mu7nhFZJwSmkAdkv1qbYL3p8rjByhekobX/unspent
+For Learning All About The BitcoinCLI: https://github.com/ChristopherA/Learning-Bitcoin-from-the-Command-Line/blob/master/04_2_Creating_a_Raw_Transaction.md
+
+Addresses:
+Bitcoin-CLI Testnet Address: 2N89dRy5sLAB3qfUWuySwyF483NEmVXUwnQ
+Electrum Testnet Address: tb1qytw6v7z4e8st29cr4k6j3c7tsssnwarmax2pqm
+
+CREATE RAW TRANSACTION:
+"[{\"txid\": \"12220f4ca652b24b0bec8e8025858e3ba5086db8a43174bd9122916069d3707d\", \"vout\": 0}]" "{\"data\": \"68656c6c6f776f726c64\", \"2N89dRy5sLAB3qfUWuySwyF483NEmVXUwnQ\": 0.05}"
+
+The Raw Transaction For My UTXO:
+02000000017d70d36960912291bd7431a4b86d08a53b8e8525808eec0b4bb252a64c0f22120000000000ffffffff0200000000000000000c6a0a68656c6c6f776f726c64404b4c000000000017a914a37af5c72d201903bcefc0941a95ba566016dd498700000000
+
+The raw transaction from the txid's prevout:
+02000000000101921c86ca2cdf87bd9b07ebfdfa920c2a8d0947d94b0f238bbca713e5b6ee77b70000000017160014640ec5a85cc75e9a1ccedd73574d82891b5502ecfeffffff02593455000000000016001422dda67855c9e0b51703adb528e3cb842137747b614e570d020000001600147fe4a5bdef12932568d7cef056f1a041b28f91980247304402204b3bbf6209ee25c091209d65145d28827e98c51d5665e518bdac3b339e5cb83e022024221a91e2100b852ae42dab50c45c5029116f47217106c0c43c19bad4d9e816012103935dce5ab3dc1da50f4b1f7e17f890b7875e2e632c0989eae4984eee636612e7f8fb1700
+
+Private Key: p2wpkh:cQHFZq6KwxLnNsTHoyWTcgDnp2Um3fZEhHvPf3JzwhK71xqnJ5HB
+FOR Address: tb1qytw6v7z4e8st29cr4k6j3c7tsssnwarmax2pqm
+
+ScriptPubKey: 00147fe4a5bdef12932568d7cef056f1a041b28f9198
+
+SIGN RAW TRANSACTION:
+"02000000017d70d36960912291bd7431a4b86d08a53b8e8525808eec0b4bb252a64c0f22120000000000ffffffff0200000000000000000c6a0a68656c6c6f776f726c64404b4c000000000017a914a37af5c72d201903bcefc0941a95ba566016dd498700000000" '["cQHFZq6KwxLnNsTHoyWTcgDnp2Um3fZEhHvPf3JzwhK71xqnJ5HB"]'
+
+The Signed Raw Transaction:
+020000000001017d70d36960912291bd7431a4b86d08a53b8e8525808eec0b4bb252a64c0f22120000000000ffffffff0200000000000000000c6a0a68656c6c6f776f726c64404b4c000000000017a914a37af5c72d201903bcefc0941a95ba566016dd49870247304402206f58811520c2314f47b3f6a52c3e251b585f80acc339b80991c156d3ee98bfd502201bcec37609f52ddf66610d56f40fb2ebfceb5b691371d37ecd3be83a293412370121020617d6ef5048484d33e37858e6e8d091e9bd4530870ea8855ef7205d898a232700000000
+
+TransactionID from the broadcast:
+b5d714c516478d40f47f149b476f11bd677e1dc8a6de2551aa8894c9358e37d7
+
+BITCOIN CLI CH. 2:
+
+Regtest Address
+2Myi4mWzCBv674w2ye95iYz2hUWA8SpmUwZ
